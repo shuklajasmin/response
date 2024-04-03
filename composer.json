@@ -22,7 +22,7 @@
     },
     "autoload": {
         "psr-4": {
-            "Shukaljasmin\\jessadmin\\": "src/"
+            "Shukaljasmin\\response\\": "src/"
         }
     }
 }
