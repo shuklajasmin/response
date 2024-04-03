@@ -1,37 +1,28 @@
+
 {
-    "name": "shuklajasmin/response",
+    "name": "shukaljasmin/response",
     "description": "A super simple package allowing for consistent API responses throughout your Laravel application ",
+    "type": "laravel",
+    "license": "MIT",
     "keywords": [
         "laravel",
         "laravel api response",
         "laravel api response helpers",
         "laravel api wrapper"
     ],
-    "homepage": "https://github.com/shuklajasmin/response",
-    "license": "MIT",
     "authors": [
         {
-            "name": "Jasmin Shukla",
-            "email": "mr.jasmin.shukal@gmail.com",
-            "homepage": "https://www.jasminshukla.com",
-            "role": "Developer"
+            "name": "jasmin shukal",
+            "email": "mr.jasmin.shukal@gmail.com"
         }
     ],
+    "minimum-stability": "dev",
     "require": {
-        "php": "^8.0",
-        "illuminate/support": "^8.0|^9.0|^10.0|^11.0"
+        "php" : ">=7.0.0"
     },
     "autoload": {
         "psr-4": {
-            "Shukaljasmin\\response\\": "src/"
+            "Shukaljasmin\\jessadmin\\": "src/"
         }
-    },
-    "scripts": {
-        "test": "./vendor/bin/phpunit"
-    },
-    "config": {
-        "sort-packages": true
-    },
-    "minimum-stability": "dev",
-    "prefer-stable": true
+    }
 }
