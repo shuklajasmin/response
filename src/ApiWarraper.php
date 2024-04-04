@@ -46,7 +46,7 @@ class ApiWarraper
         return $responce;
     }
 
-    public static function MeargeBody($data)
+    public static function meargeBody($data)
     {
         if(self::$extrabody!="")
         {
