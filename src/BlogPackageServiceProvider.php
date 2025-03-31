@@ -19,5 +19,9 @@ class BlogPackageServiceProvider extends ServiceProvider
     $this->app->bind('ApiWarper', function($app) {
         return new ApiWarper();
     });
+
+    $this->publishes([
+        __DIR__.'/config/ApiWarper.php' => config_path('ApiWarper.php')
+    ], 'config');
   }
 }

@@ -9,6 +9,7 @@ class ApiWarper
     private static $data;
     private static $extrabody;
     private static $status=0;
+    private static $statusMathod='boolen';
 
 
     public static function setStatus(int $status)
@@ -64,7 +65,15 @@ class ApiWarper
         $reaponce=array();
         if(isset(self::$status))
         {
-            $responce['status']=self::$status;
+            if(self::$statusMathod=="boolen")
+            {
+                $updatedStatus=self::$status=="0" ? false : true; 
+                $responce['status']=$updatedStatus;
+            }else
+            {
+
+                $responce['status']=self::$status;
+            }
         }
         if(isset(self::$message))
         {
@@ -110,7 +119,7 @@ class ApiWarper
     public static function ErrorJson($msg="",$result =array()) {
         // self::$status=0;
         if(self::$status!=0){
-            self::$status = 0;
+            self::$status = false;
         }
 
         if(!empty($msg)){
