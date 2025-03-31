@@ -5,25 +5,28 @@
     "type": "laravel",
     "license": "MIT",
     "keywords": [
-        "laravel",
+        "jasmin shukla",
+        "shukla jasmin",
         "laravel api response",
         "laravel api response helpers",
-        "laravel api wrapper"
+        "laravel api wrapper",
+        "api wrapper"
     ],
     "authors": [
         {
             "name": "jasmin shukal",
-            "email": "mr.jasmin.shukal@gmail.com"
+            "homepage": "https://jasminshukla.com",
+            "email": "mr.jasmin.shukal@gmail.com",
+            "role": "Developer"
         }
     ],
-    "minimum-stability": "stable",
+    "minimum-stability": "dev",
+    "prefer-stable": true,
     "require": {
         "php" : ">=8.0.1"
     },
     "require-dev": {
         "php" : "^8.0",
-        "laravel/passport": "^11.0|^12.0",
-        "orchestra/testbench": "^6.23|^7.0|^8.0|^9.0",
         "phpunit/phpunit": "^9.4|^10.1"
     },
     "autoload": {

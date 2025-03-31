@@ -2,7 +2,7 @@
 
 namespace Shukaljasmin\Response;
 
-class ApiWarraper
+class ApiWarper
 {
 
     private static $message;

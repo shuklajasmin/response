@@ -3,21 +3,21 @@
 namespace Shukaljasmin\Response;
 
 use Illuminate\Support\ServiceProvider;
-use Shukaljasmin\Response\ApiWarraper;
+use Shukaljasmin\Response\ApiWarper;
 
 class BlogPackageServiceProvider extends ServiceProvider
 {
   public function register()
   {
-    $this->app->bind('ApiWarraper', function($app) {
-        return new ApiWarraper();
+    $this->app->bind('ApiWarper', function($app) {
+        return new ApiWarper();
     });
   }
 
   public function boot()
   {
-    $this->app->bind('Calculator', function($app) {
-        return new ApiWarraper();
+    $this->app->bind('ApiWarper', function($app) {
+        return new ApiWarper();
     });
   }
 }
